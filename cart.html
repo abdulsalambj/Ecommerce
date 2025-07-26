@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Cart</title>
+  <link rel="stylesheet" href="style.css" />
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+   <style>
+  #home_page{
+  position: fixed;
+  right: 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #333;
+  
+}
+
+
+.product-img{
+  width: 150px;
+}
+
+    div{
+      width: 800px;
+      margin-left: 100px;
+      /* column-gap: 20px; */
+      margin-bottom: 50px;
+    }
+
+   </style>
+</head>
+
+<body onload="renderCart()">
+
+
+   <header>
+    <nav>
+      <a href="index.html" class="logo">Ecommerce</a>
+
+      <a href="cart.html" class="cart-icon">
+        <i class="ri-shopping-cart-line"></i>
+        <span id="cart-count"></span>
+      </a>
+
+
+    </nav>
+  </header>
+
+  <main>
+    <a href="index.html" id="home_page">Back to home</a>
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+
+    <hr />
+    <div>
+      <p>Total Quantity: <span id="total-qty">0</span></p>
+      <p>Total Price: Rs <span id="total-price">0</span></p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
